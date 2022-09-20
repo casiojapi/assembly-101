@@ -13,4 +13,5 @@ section .text:
 ; .data: program labels, vars
 section .data:
     message: db "La concha del pato", 0xA ; db -> define bytes | 0xA -> newline in hex
+    message_length equ $-message ; message_lenght equals length of message var
     
